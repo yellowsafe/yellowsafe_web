@@ -3,8 +3,6 @@
 import Link from '@/utils/ActiveLink';
 
 import React from "react";
-import Image from 'next/image';
-import blackLogo from 'public/images/YS-09_opti.png'
 
 const NavbarStyleTwo = () => {
     const [menu, setMenu] = React.useState(true)
@@ -36,14 +34,9 @@ const NavbarStyleTwo = () => {
                         <nav className="navbar navbar-expand-md navbar-light bg-light">
                             <Link href="/">
                                 <a className="navbar-brand">
-                                    <Image
-                                    src={blackLogo}
-                                    alt="logo"
-                                    // width={500} automatically provided
-                                    // height={500} automatically provided
-                                    // blurDataURL="data:..." automatically provided
-                                    // placeholder="blur" // Optional blur-up while loading
-                                    />
+                                <img src="/images/YS-09_opti.png" alt="logo" />
+
+
                                 </a>
                             </Link>
 

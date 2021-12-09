@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import blackLogo from 'public/images/black-logo.png'
-import comingSoon from 'public/images/coming-soon.jpg'
+
 
 const ComingSoon = () => {
 
@@ -48,14 +46,7 @@ const ComingSoon = () => {
                                     <div className="d-table-cell">
                                         <Link href="/">
                                             <a className="logo">
-                                                <Image
-                                                src={blackLogo}
-                                                alt="logo"
-                                                // width={500} automatically provided
-                                                // height={500} automatically provided
-                                                // blurDataURL="data:..." automatically provided
-                                                // placeholder="blur" // Optional blur-up while loading
-                                                />
+                                            <img src="/images/black-logo.png" alt="logo" />
                                                 </a>
                                         </Link>
 
@@ -92,14 +83,8 @@ const ComingSoon = () => {
 
                         <div className="col-lg-6 col-md-12 p-0">
                             <div className="coming-soon-image">
-                                <Image
-                                src={comingSoon}
-                                alt="coming-soon"
-                                // width={500} automatically provided
-                                // height={500} automatically provided
-                                // blurDataURL="data:..." automatically provided
-                                // placeholder="blur" // Optional blur-up while loading
-                                />
+                            <img src="/images/coming-soon.jpg" alt="coming-soon" />
+
                             </div>
                         </div>
                     </div>
