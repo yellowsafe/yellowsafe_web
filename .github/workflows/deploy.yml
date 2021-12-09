@@ -39,6 +39,7 @@ jobs:
         env:
           NODE_ENV: ${{ secrets.NODE_ENV }}
         run: |
+          echo $NODE_ENV
           npm i --legacy-peer-deps
           npm run build
           npm run export
