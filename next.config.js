@@ -6,6 +6,6 @@ module.exports = {
         includePaths: [path.join(__dirname, 'styles')],
     },
     trailingSlash: true,
-    assetPrefix: isProd ? "/yellowsafe_web/" : "",
+    assetPrefix: "/yellowsafe_web/" ,
 
 }
