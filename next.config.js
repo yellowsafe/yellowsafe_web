@@ -6,5 +6,11 @@ module.exports = {
         includePaths: [path.join(__dirname, 'styles')],
     },
     trailingSlash: true,
-
+    redirects: async () => [
+        {
+          source: '/:path*',
+          has: [{ type: 'host', value: 'www.yellowsafe.cl' }],
+          destination: 'https://yellowsafe.cl/:path*',
+          permanent: true
+        }],
 }
