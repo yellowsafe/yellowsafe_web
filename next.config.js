@@ -6,6 +6,5 @@ module.exports = {
         includePaths: [path.join(__dirname, 'styles')],
     },
     trailingSlash: true,
-    assetPrefix: "/yellowsafe_web/" ,
 
 }
